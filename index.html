@@ -1,21 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_BR">
+    <!-- Cabeçalho -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira Aula de HTML</title>
+    <meta name="description" content="Ecommerce">
+    <meta name="keywords" content="Peças, Componentes, Placas">
+    <!-- <meta http-equiv="refresh" content="5" url="http://exemple.com"> -->
+    <title> Portifólio HTML </title>
+    <!-- Estilização -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Script --> 
 </head>
+    <!-- Corpo -->
 <body>
-    <!-- Trabalhando tags básicas -->
-    
-    <h1 style="background-color:yellow;">TDS01 - Aula 01</h1>
+    <!-- html semântica -->
+    <!-- cabeçalho do conteúdo -->
+      <header>
+        <h1 style="text-align: center;"> Portifólio Everson Reis HTML </h1>
+        <nav>
+            <ul>
+                <li> <a href="#sobre">Sobre Mim</a></li>
+                <li> <a href="#projetos">Projetos</a></li>
+                <li> <a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
 
-    <h2 style="background-color: yellow;">Atalhos ( CTRL + ; ) = Cria comentário.</h2>
+        <h4> Regras do HTML </h4>
     
+        <h4> - Tags e padrões </h4>
+    
+        <h4> - Sites para usar como referência para se ter boas práticas. </h4>
+    
+        <h5> <a href="https://www.w3.org/"> - Site para padrões WEB / HTML </a> </h5>
+    
+        <h5> <a href="https://validator.w3.org/"> - Site Validador de código HTML W3</a> </h5>
+    
+        <h5> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements"> - Manual HTML / CSS</a> </h5>
+    
+        <h5> <a href="https://webaim.org/"> - Ferramenta de análise de contraste</a> </h5>
+      </header>
+      <!-- conteúdo principal -->
+        <main>
+            <section id="sobre">
+              <h2>Sobre Mim</h2>
+                <figure>
+                    <img src="/IMAGES/evinho 1.jpg" alt="Foto do Everson Reis" width="200">
+                    <figcaption> Estutande de TI </figcaption>
+                </figure>
+                <p>
+                    Olá! Eu sou um desenvolvedor web apaixonado por criar soluções acessiveis
+                    e eficientes. Tenho experiência com tecnologias como HTML,
+                    CSS, e JavaScript e estou sepre buscando aprender mais.
+                </p>
+            </section>
+            <section id="servicos">
+                <h2> Meus projetos </h2>
+                <article>
+                    <h3> Projeto Casa Dossica </h3>
+                    <p> Desenvolvi um sistema comercial para uma loja de doces e salgados. </p>
+                    <a href="#"> Ver Projeto </a>
+                </article>
+            </section>
+            <article>
+                <h3> Projeto TDSQueue </h3>
+                <p> Desenvolvi um sistema de fila para o Senac-SP. </p>
+                <a href="#"> Ver Projeto </a>
+            </article>
+        </section>
+            <section ></section>
+        </main>
+        <!-- final do documento - rodape -->
+         <footer id="contato"> 
+
+         </footer>
     <div>
-        <img src="/IMAGES/carro_aula1.jpg" alt="Carro antigo" id="imagem">
-        <img src="/IMAGES/carro_aula1.jpg" alt="Carro antigo" id="imagem">
+        <img src="" alt="" id="">
     </div>
-
 </body>
 </html>
