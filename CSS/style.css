@@ -1,0 +1,47 @@
+@import url(reset.css); 
+
+/* comentários no css */
+
+/* Estilos gerais */
+
+/* --- Cabeçalho --- */
+
+header{
+    background-color: gray; /* cor escura para o cabeçalho */
+    color: #ffffff; /* cor de texto branca */
+    padding: 1rem 0; /* preechimento superior e inferior espaçamento de conteúdo */
+    margin: 0 0 0 0; /* preechimento em sentido horario das borda */
+    text-align: center; /* centraliza o texto */
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); /* sombra para dar profundidade */
+}
+
+header h1{
+    margin: 0; /* remove a margem padrão do H1 - mas isso já foi feito na linha 1. */
+    font-size: 2.5rem; /* tamanho da fonte, (1rem = 16px) */
+}
+
+nav ul{
+    list-style: none; /* já tem no reset */
+    margin: 1rem 0 0 0; /* afasta 16px do titulo */
+    display: flex; /* faz os itens ficarem alinhados lado a lado */
+    justify-content: center; /* centraliza os itens da lista */
+}
+
+nav ul li{
+    margin: 0 1rem; /* espaçameto entre os iten do menu */
+}
+
+nav ul li a{
+    color: #ffffff; /* define a cor para a fonte */
+    text-decoration: none; /* remove o sublinhado padrão do link */
+    font-weight: 900; /* peso da fonte pra destaque = colcar negrito */
+    transition: color 0.3s ease; /* transição suave para o efeito hover */
+}
+
+nav ul a:hover{
+    color: blue; /* define a cor quando passar o mouse por cima da palavra */
+}
+
+h1{
+    color: powderblue; /* define a cor do cabecalho */
+}
