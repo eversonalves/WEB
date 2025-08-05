@@ -39,9 +39,131 @@ nav ul li a{
 }
 
 nav ul a:hover{
-    color: blue; /* define a cor quando passar o mouse por cima da palavra */
+    color: powderblue; /* define a cor quando passar o mouse por cima da palavra */
 }
 
 h1{
-    color: powderblue; /* define a cor do cabecalho */
+    color: black; /* define a cor do cabecalho */
+}
+
+/* --- Conteúdo principal --- */
+
+main{
+    max-width: 960px; /* largura maxima do conteúdo principal */
+    margin: 2rem auto; /* centraliza o conteúdo e adiciona margem superior e inferior */
+    padding: 0 20px; /* preechimento lateral para não colar nas bordas */
+}
+
+/* === estilos para as seções (Sobre mim, projeto, cursos) */
+
+section{
+    background-color: #ffffff; /* fundo branco para as seções */
+    padding: 2.5rem; /* 2.5rem = 40px - preechimento interno */
+    margin-bottom: 2.5rem; /* 2.5rem = 40px - espaço entre as seções */
+    border-radius: 8px; /* cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* sombra suave para as seções */
+}
+
+section h2{
+    color: black; /* cor do titulo da seção */
+    text-align: center; /* centraliza o titulo */
+    margin-bottom: 1.5rem; /* espaço abaixo do titulo */
+    font-size: 2rem; /* tamanho da fonte do titulo da seção */
+}
+
+/* --- Seção sobre mim --- */
+
+#sobre figure{
+    text-align: center; /* centraliza a imagem e a legenda */
+    margin-bottom: 2rem; /* espaço abaixo da figura */
+}
+
+#sobre img{
+    border-radius: 50%; /* transforma a imagem e um circulo */
+    border: 3px solid darkcyan; /* borda colorida a redor da imagem */
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3); /* adiciona fundo de sombra a imagem */
+    transition: transform 0.3s ease; /* transição suave para o efeito hover */
+}
+
+#sobre img:hover{
+    transform: scale(1.05); /* Aumenta em 5% a imagem ao passar o mouse sobre */
+}
+
+#sobre figcaption{
+    margin-top: 10px; /* espaço entre a imagem e a legenda da imagem */
+    font-style: italic; /* o texto da lengenda muda para italico */
+    color: #555; /* cor do texto da legenda */
+}
+
+/* --- seção meus projetos --- */
+
+.projeto-item{ /* estilo para os artigos de projeto */
+    border-bottom: 2px solid #eee; /* linha divisoria entre os projetos */
+    padding-bottom: 1.5rem; /* espaçamento abaixo da linha */
+    margin-bottom: 1.5rem; /* espaçamento abaixo do artigo */
+}
+
+.projeto-item:last-child{
+    border-bottom: none; /* remove a linha do ultimo artigo */
+    margin-bottom: 0; /* remove a margem do ultimo artigo */
+}
+
+#projetos h3{
+    color: #3498db; /* cor do titulo dos projetos */
+    margin-bottom: 10px; /* espaçamento entre o titulo do projeto e as informações do projeto */
+}
+
+.botao-projeto{ /* estilo para os links "Ver projetos" */
+    display: inline-block; /* permite aplicar padding e margin */
+    background-color: #3498db; /* cor de fundo "Ver projetos" */
+    color: #ffffff; /* cor do texto do botão "Ver projetos" */
+    padding: 8px 15px; /* preechimento interno */
+    border-radius: 8px; /* bordas no botão "Ver projetos" */
+    text-decoration: none; /* remove o sublinhado do botão "Ver projeto" */
+    margin-top: 10px; /* espacamento entre o botão e a descrição do projeto */
+    transition: background-color 0.3s ease; /* transição suave para o hover do botão */
+}
+
+.botao-projeto:hover{
+    background-color: #217dbb; /* escurece o botão ao passar o mouse por cima */
+}
+
+
+/* --- seção "Cursos & certificados" --- */
+
+.lista-cursos{
+    display: grid; /* torna a div um formato de grade */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* layout responsivo em grade */
+    gap: 20px; /* espaçamento entre os item */
+}
+
+.curso-item{
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.curso-item h3{
+    color: #28a745;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
+/* .curso-item time{
+    display: block; 
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+} */
+
+/* --- Rodapé --- */
+
+footer{
+    background-color: #34495e; /* cor de fundo escura para rodapé */
+    color: #ffffff; /* cor de texto do rodapé */
+    text-align: center; /* centraliza o texto do rodapé */
+    padding: 2rem 0; /* preechimento superior e inferior */
+    margin-top: 3rem; /* espaço superior para separar do conteúdo */
 }
