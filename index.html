@@ -10,12 +10,14 @@
     <title> Portifólio HTML </title>
     <!-- Estilização -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Script --> 
 </head>
-    <!-- Corpo -->
 <body>
-    <!-- html semântica -->
-    <!-- cabeçalho do conteúdo -->
+    <!-- Corpo -->
+    <div class="container">
+             <!-- html semântica -->
+             <!-- cabeçalho do conteúdo -->   
       <header>
         <h1> Portifólio Everson Reis </h1>
         <nav>
@@ -72,59 +74,67 @@
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
                         <a href="#" class="botao-curso" target="_blank"> Ver Curso </a>
                     </article>   
-
+                    
                 </div>
+                
+            </section>
+            
+            <section>
+                
+                 <!-- Ordem dos CSS - 1° Inline, 2° Interno, 3° Externo -->
 
+                 <h2> Referencia de sites </h2>
+                    
+                 <h5> <a href="https://www.w3.org/" target="_blank"> - Site para padrões WEB / HTML </a> </h5>
+                    
+                 <h5> <a href="https://validator.w3.org/" target="_blank"> - Site Validador de código HTML W3</a> </h5>
+                    
+                 <h5> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements" target="_blank"> - Manual HTML / CSS</a> </h5>
+                    
+                 <h5> <a href="https://webaim.org/" target="_blank"> - Ferramenta de análise de contraste</a> </h5>
+            
+                <h5> <a href="https://coolors.co/" target="_blank"> - Site para referencia de cores </a></h5>
+                
             </section>
         </main>
         <!-- final do documento - rodape -->
-         <footer id="contato">
-            <h2>Contato e Localização</h2>
-            <div>
-                <p><strong>Encontre-me:</strong></p>
-                <address>
-                    São Paulo, SP - Brasil
-                </address>
-                <ul id="redes-sociais">
-                    <li><a href="mailto:everson.alves18@hotmail.com">Email</a></li>
-                    <li><a href="https://www.linkedin.com/in/alveseverson" target="_blank">linkedIn</a></li>
-                    <li><a href="https://github.com/eversonalves" target="_blank">GitHub</a></li>
-                </ul>
-            </div>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.25594698175!2d-46.463831559576505!3d-23.523295078914078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce613451f313ad%3A0x9f734fe87a22d653!2sAv.%20Ernesto%20Souza%20Cruz%2C%201355%20-%20Cidade%20Ant%C3%B4nio%20Est%C3%AAv%C3%A3o%20de%20Carvalho%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008225-380!5e0!3m2!1spt-BR!2sbr!4v1754307814318!5m2!1spt-BR!2sbr" 
-                width="400"
-                height="300"
-                style="border:0;"
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div> 
-            <section>
-                <aside>
-                    <figure>
-                        <img src="" alt="">
-                        <figcaption>Localização</figcaption>
-                    </figure>
-                </aside>
-            <p>&copy;2025 Meu Portifólio</p>
-         </footer>
-    <div>
-        <img src="" alt="" id="">
-    </div>
-                     <!-- Ordem dos CSS - 1° Inline, 2° Interno, 3° Externo -->
-    
-                     <h4> - Sites para usar como referência para se ter boas práticas. </h4>
-    
-                     <h5> <a href="https://www.w3.org/" target="_blank"> - Site para padrões WEB / HTML </a> </h5>
-    
-                     <h5> <a href="https://validator.w3.org/" target="_blank"> - Site Validador de código HTML W3</a> </h5>
-    
-                     <h5> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements" target="_blank"> - Manual HTML / CSS</a> </h5>
-    
-                     <h5> <a href="https://webaim.org/" target="_blank"> - Ferramenta de análise de contraste</a> </h5>
+         <footer id="Contato">
+            <div class="container">
+                <div class="localizacao">
+                    <h3> Localização </h3>
+                    <p> Avenida Ernesto Souza Cruz, 1355 </p>
+                    <p> Bairro Cidade A.E Carvalho - São Paulo - SP 08225380 </p>
+                    <address>
+                        Telefone: <a href="tel:+5511949192628"> (11)94919-2628</a><br>
+                        Email: <a href="mailto:everson.alves18@hotmail.com"> everson.alves18@hotmail.com</a>
+                    </address>
 
-                     <h5> <a href="https://coolors.co/" target="_blank"> - Site para referencia de cores </a></h5>
+                    <ul id="redes-sociais">
+                            <li>
+                                <a href="https://www.linkedin.com/in/alveseverson" target="_blank"> <img src="/IMAGES/linkedin2.png" alt="imagem do linkedin"> &nbsp; Linkedin </a></li>
+                            <li>
+                                <a href="https://github.com/eversonalves" target="_blank"> <img src="/IMAGES/github2.png" alt="imagem do github"> &nbsp; GitHub </a></li>
+                            <li>
+                                <a href="https://www.instagram.com/eversonreis__" target="_blank"> <img src="/IMAGES/instagram.png" alt="imagem do instaram"> &nbsp; Instagram </a></li>
+                    </ul>
+
+                </div>
+                <div class="mapa-container">
+                    <h3> Meu local </h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2559469841995!2d-46.463836924015446!3d-23.52329507882595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce613451f313ad%3A0x9f734fe87a22d653!2sAv.%20Ernesto%20Souza%20Cruz%2C%201355%20-%20Cidade%20Ant%C3%B4nio%20Est%C3%AAv%C3%A3o%20de%20Carvalho%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008225-380!5e0!3m2!1spt-BR!2sbr!4v1754484050648!5m2!1spt-BR!2sbr"
+                     width="400"
+                     height="300"
+                     style="border:0;"
+                     allowfullscreen=""
+                     loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade">
+                     </iframe>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy;2025 Everson Reis. Todos os direitos reservados.
+            </div>
+         </footer>
+     </div>   <!--- Aqui termina o conteiner -->
 </body>
 </html>

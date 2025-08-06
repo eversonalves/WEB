@@ -1,13 +1,39 @@
 @import url(reset.css); 
 
+/* --- Importa uma fonte simples do google para melhorar a tipografia do nosso projeto */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* --- habilita a rolagem suave para toda a pagina */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 /* comentários no css */
 
 /* Estilos gerais */
 
+body{
+    font-family: 'Roboto', 'sans-serif'; /* Aplica a fonte Roboto */
+    line-height: 1.6; /* espaçamento entre as linhas para melhor leitura */
+    font-weight: 350; /* define o peso da fonte (peso = espessura) */
+    background-color: #508991;
+}
+
+/* --- Conteiner para centralizar o conteúdo principal */
+
+.container{
+    max-width: 1200px; /* Largura máxima para o conteiner principal */
+    margin: 0 auto;
+    padding: 0 20px; /* borda para nao deixar o conteúdo colar no conteiner */
+}
+
 /* --- Cabeçalho --- */
 
 header{
-    background-color: gray; /* cor escura para o cabeçalho */
+    background-color: #172A3A; /* cor escura para o cabeçalho */
     color: #ffffff; /* cor de texto branca */
     padding: 1rem 0; /* preechimento superior e inferior espaçamento de conteúdo */
     margin: 0 0 0 0; /* preechimento em sentido horario das borda */
@@ -43,7 +69,7 @@ nav ul a:hover{
 }
 
 h1{
-    color: black; /* define a cor do cabecalho */
+    color: #ffffff; /* define a cor do cabecalho */
 }
 
 /* --- Conteúdo principal --- */
@@ -57,7 +83,7 @@ main{
 /* === estilos para as seções (Sobre mim, projeto, cursos) */
 
 section{
-    background-color: #ffffff; /* fundo branco para as seções */
+    background-color: #ffffff ; /* fundo branco para as seções */
     padding: 2.5rem; /* 2.5rem = 40px - preechimento interno */
     margin-bottom: 2.5rem; /* 2.5rem = 40px - espaço entre as seções */
     border-radius: 8px; /* cantos arredondados */
@@ -80,7 +106,7 @@ section h2{
 
 #sobre img{
     border-radius: 50%; /* transforma a imagem e um circulo */
-    border: 3px solid darkcyan; /* borda colorida a redor da imagem */
+    border: 1px solid darkcyan; /* borda colorida a redor da imagem */
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3); /* adiciona fundo de sombra a imagem */
     transition: transform 0.3s ease; /* transição suave para o efeito hover */
 }
@@ -109,7 +135,7 @@ section h2{
 }
 
 #projetos h3{
-    color: #3498db; /* cor do titulo dos projetos */
+    color: #28a745; /* cor do titulo dos projetos */
     margin-bottom: 10px; /* espaçamento entre o titulo do projeto e as informações do projeto */
 }
 
@@ -125,11 +151,27 @@ section h2{
 }
 
 .botao-projeto:hover{
-    background-color: #217dbb; /* escurece o botão ao passar o mouse por cima */
+    background-color: #09BC8A; /* escurece o botão ao passar o mouse por cima */
 }
 
-
 /* --- seção "Cursos & certificados" --- */
+
+
+.botao-curso{ /* estilo para os links "Ver projetos" */
+    display: inline-block; /* permite aplicar padding e margin */
+    background-color: #3498db; /* cor de fundo "Ver projetos" */
+    color: #ffffff; /* cor do texto do botão "Ver projetos" */
+    padding: 8px 15px; /* preechimento interno */
+    border-radius: 8px; /* bordas no botão "Ver projetos" */
+    text-decoration: none; /* remove o sublinhado do botão "Ver projeto" */
+    margin-top: 10px; /* espacamento entre o botão e a descrição do projeto */
+    transition: background-color 0.3s ease; /* transição suave para o hover do botão */
+}
+
+.botao-curso:hover{
+    background-color: #09BC8A; /* escurece o botão ao passar o mouse por cima */
+}
+
 
 .lista-cursos{
     display: grid; /* torna a div um formato de grade */
@@ -158,12 +200,80 @@ section h2{
     margin-top: 10px;
 } */
 
+
 /* --- Rodapé --- */
 
 footer{
-    background-color: #34495e; /* cor de fundo escura para rodapé */
+    background-color: #004346 ; /* cor de fundo escura para rodapé */
     color: #ffffff; /* cor de texto do rodapé */
     text-align: center; /* centraliza o texto do rodapé */
     padding: 2rem 0; /* preechimento superior e inferior */
     margin-top: 3rem; /* espaço superior para separar do conteúdo */
+}
+
+footer .container{
+    display: flex; /* Permite flexbox para o layout em colunas e linhas */
+    flex-wrap: wrap; /* Permite que os itens quebre linhas */
+    justify-content: space-around; /* Espaçamento uniforme entre os itens */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    text-align: left; /* Alinha o texto a esquerda de cada item do rodapé */
+}
+
+footer .localizacao,
+footer .mapa-container{
+    flex-basis: 45%; /* define a largura base para dois item por linha */
+    max-width: 45%; /* limita largura máxima */
+    margin-bottom: 1.5rem; /* define espaçamento inferior */
+    box-sizing: border-box; /* incluin padding na largura total */
+}
+
+footer .localizacao p,
+footer .localizacao address{
+    margin-bottom: 10px;
+}
+
+footer #redes-sociais{
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+footer #redes-sociais li{
+    margin-bottom: 8px;
+}
+
+footer #redes-sociais a{
+    color: #ffffff; /* cor do texto */
+    text-decoration: none; /* remove o sublinhado */
+    transition: color 0.3s ease;
+    display: flex; /* usado para alinha o icon com o texto */
+    align-items: center; /* alinha os itens com o conteúdo */
+} 
+
+footer #redes-sociais a:hover{
+    color: #09BC8A;
+}
+
+footer #redes-sociais a img{
+    width: 20px; /* largura da imagem dos icones */
+    height: 20px; /* altura da imagem dos icones */
+    margin-right: 8px; /* margem esqueda */
+    border-radius: 4px; /* adiciona bordas aos icones */
+    vertical-align: middle; 
+}
+
+footer .mapa-container iframe{
+    width: 100%; /* adiciona  largura ao mapa */
+    height: 300%; /* adiciona altura ao mapa */
+    border-radius: 8px; /* adiciona bordas ao mapa */
+    box-shadow: 0 5px 8px rgba(255, 255, 255, 0.3);
+}
+
+.copyright{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    text-align: center;
+    width: 100%;
 }
